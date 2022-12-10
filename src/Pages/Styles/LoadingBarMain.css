@@ -1,0 +1,13 @@
+.bar_mn_full {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  z-index: 10000;
+  background-color: rgb(133, 133, 133);
+}
+.bar_mn_full > div {
+  height: 100%;
+  background-color: rgb(75, 75, 75);
+}

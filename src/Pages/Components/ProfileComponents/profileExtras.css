@@ -1,0 +1,73 @@
+.prf_modif_main {
+  display: flex;
+  align-items: center;
+}
+.prf_modif_cmp {
+  width: 100%;
+}
+.prf_modif_us,
+.prf_modif_dsc {
+  margin-left: 25px;
+  margin-bottom: 1em;
+}
+.prf_modif_us > input {
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #404142;
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 0.5em;
+  font-size: 16px;
+}
+.prf_modif_dsc > textarea {
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  color: white;
+  resize: none;
+  background-color: #404142;
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 0.5em;
+  font-size: 16px;
+}
+.mdf_acc_h {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.prf_modif_img_h {
+  position: relative;
+  transition: all 0.3s;
+}
+.prf_modif_img_h:hover {
+  filter: brightness(0.6);
+}
+.prf_modif_main > div > input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 150px;
+  outline: none;
+  cursor: pointer;
+  z-index: 0;
+  color: transparent;
+}
+.prf_modif_main > div > input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#modif_prv_img {
+  width: 180px;
+  height: 180px;
+  border-radius: 150px;
+  object-fit: cover;
+  border: 2px solid rgb(100, 100, 100);
+}
+.mdf_acc_h {
+  float: right;
+  display: flex;
+}

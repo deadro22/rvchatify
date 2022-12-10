@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: rgb(26, 25, 25);
+}
+
+.main_app {
+  background-color: rgb(26, 25, 25);
+  color: white;
+}
+.bt_default_rm {
+  border: none;
+  outline: none;
+}
+.bt_main_b {
+  background: none;
+  color: white;
+  padding: 0.5em;
+  cursor: pointer;
+  font-size: 18px;
+}
+.otln {
+  outline: none;
+}
+.mr-r-1 {
+  margin-right: 1em;
+}
+.mr-l-1 {
+  margin-left: 1em;
+}
+.t-muted-sm {
+  color: rgb(167, 167, 167);
+  font-size: 16px;
+}
+.t-dark-sld {
+  font-weight: 700;
+}
+.pd-1 {
+  padding: 1em;
+}
+.pd-2 {
+  padding: 2em;
+}
+.cst_link {
+  text-decoration: none;
+  color: rgb(1, 122, 202);
+  font-weight: 600;
+}
+.default_lnk_rm {
+  text-decoration: none;
+  color: white;
+}
+.bt_tag {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  margin: 0px 3px;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  font-size: 15px;
+}
+.at_bt_tag {
+  background-color: #2f4e6d;
+}
+.bt_tag:hover {
+  background-color: #595a5c;
+}
+.hs_bt_tag {
+  background-color: #404142;
+}

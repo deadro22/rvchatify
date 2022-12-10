@@ -1,0 +1,70 @@
+.post_addfr_mn {
+  padding: 1em;
+  display: flex;
+}
+.post_addfr_mn > form {
+  width: 100%;
+}
+.post_addfr_mn > form > textarea {
+  width: 100%;
+  padding: 0.5em;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  resize: none;
+  font-size: 20px;
+}
+.fl_upld_holder {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+}
+.fl_upld_holder > i {
+  font-size: 20px;
+  padding: 0.5em;
+  border-radius: 30px;
+  background-color: #515253;
+}
+#fl_upld_r {
+  position: absolute;
+  width: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+#fl_upld_r::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.fl_hld_k {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#prv_img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+.prv_pst_img_g > img {
+  position: relative;
+}
+.prv_pst_img_g > i {
+  position: absolute;
+  left: 0;
+  margin-left: 1em;
+  margin-top: 5px;
+  font-size: 20px;
+  background-color: #1a1919;
+  border-radius: 20px;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  cursor: pointer;
+  border: 0.5px solid rgb(184, 184, 184);
+}
+video {
+  outline: none;
+}

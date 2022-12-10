@@ -1,0 +1,44 @@
+.lg_main_hl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.lg_form_sbn {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 400px;
+  padding: 1em;
+  max-width: 400px;
+  border-radius: 5px;
+  background-color: #242526;
+}
+.lg_form_sbn > div {
+  display: flex;
+  margin-bottom: 1em;
+  align-items: center;
+}
+.lg_form_sbn > div > h2 {
+  margin-right: auto;
+}
+.lg_form_sbn > input {
+  background-color: #444444;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  height: 40px;
+}
+.lg_form_sbn > input[type="submit"] {
+  transition: all 0.25s;
+}
+.lg_form_sbn > input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #5c5c5c;
+}
