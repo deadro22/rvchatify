@@ -1,5 +1,6 @@
 import axios from "axios";
 import Joi from "joi";
+import app from "./axiosConfig";
 
 class Auth {
   constructor() {
@@ -7,7 +8,7 @@ class Auth {
   }
   async login(data, cb) {
     try {
-      await axios.post("/api/users/login", data);
+      await app.post("/api/users/login", data);
       this.authenticated = true;
     } catch (e) {
       this.authenticated = false;
@@ -16,7 +17,7 @@ class Auth {
   }
   async logout(cb) {
     try {
-      await axios.post("/api/users/logout", null);
+      await app.post("/api/users/logout", null);
       cb();
     } catch (e) {
       console.log(e.reponse);
@@ -24,7 +25,7 @@ class Auth {
   }
   async isAuthenticated(cb) {
     try {
-      const user = await axios.get("/api/users/auth/check", {
+      const user = await app.get("/api/users/auth/check", {
         withCredentials: true,
       });
       this.authenticated = true;
@@ -64,7 +65,7 @@ class Auth {
   }
   async Register(data, cb) {
     try {
-      await axios.post("/api/users/register", data, {
+      await app.post("/api/users/register", data, {
         withCredentials: true,
       });
       this.authenticated = true;
