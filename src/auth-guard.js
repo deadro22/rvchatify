@@ -7,9 +7,7 @@ class Auth {
   }
   async login(data, cb) {
     try {
-      await axios.post("/api/users/login", data, {
-        withCredentials: true,
-      });
+      await axios.post("/api/users/login", data);
       this.authenticated = true;
     } catch (e) {
       this.authenticated = false;
@@ -18,9 +16,7 @@ class Auth {
   }
   async logout(cb) {
     try {
-      await axios.post("/api/users/logout", null, {
-        withCredentials: true,
-      });
+      await axios.post("/api/users/logout", null);
       cb();
     } catch (e) {
       console.log(e.reponse);
@@ -39,16 +35,30 @@ class Auth {
   }
   verifyLoginData(user) {
     const schema = {
-      ident: Joi.string().required().min(3).max(150),
-      password: Joi.string().required().min(10),
+      ident: Joi.string()
+        .required()
+        .min(3)
+        .max(150),
+      password: Joi.string()
+        .required()
+        .min(10),
     };
     return Joi.validate(user, schema);
   }
   verifyRegisterData(user) {
     const schema = {
-      username: Joi.string().required().min(3).max(150),
-      email: Joi.string().required().email().min(3).max(150),
-      password: Joi.string().required().min(10),
+      username: Joi.string()
+        .required()
+        .min(3)
+        .max(150),
+      email: Joi.string()
+        .required()
+        .email()
+        .min(3)
+        .max(150),
+      password: Joi.string()
+        .required()
+        .min(10),
     };
     return Joi.validate(user, schema);
   }
